@@ -7,6 +7,14 @@
     <artifactId>listeners</artifactId>
     <version>1.0</version>
 
+    <distributionManagement>
+        <repository>
+            <id>bintray-dddpaul-maven-listeners</id>
+            <name>dddpaul-maven-listeners</name>
+            <url>https://api.bintray.com/maven/dddpaul/maven/listeners</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -17,6 +25,11 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
             </plugin>
         </plugins>
     </build>
