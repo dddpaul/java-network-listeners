@@ -31,10 +31,9 @@ public class Listeners
     {
         return () -> {
             Socket socket = null;
-            ServerSocketChannel serverChannel = ServerSocketChannel.open();
-            serverChannel.configureBlocking( false );
-            serverChannel.socket().bind( new InetSocketAddress( port ) );
-            try {
+            try( ServerSocketChannel serverChannel = ServerSocketChannel.open() ) {
+                serverChannel.configureBlocking( false );
+                serverChannel.socket().bind( new InetSocketAddress( port ) );
                 while( true ) {
                     SocketChannel channel = serverChannel.accept();
                     Thread.sleep( 100 );
@@ -43,8 +42,6 @@ public class Listeners
                         break;
                     }
                 }
-            } finally {
-                serverChannel.close();
             }
             return socket;
         };

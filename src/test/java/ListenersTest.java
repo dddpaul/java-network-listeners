@@ -90,6 +90,7 @@ public class ListenersTest extends Assert
     {
         Process process = Listeners.createNetCatListener( PORT );
         process.destroy();
+        Thread.sleep( 250 );
         assertTrue( Listeners.isAvailable( PORT ) );
     }
 
