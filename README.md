@@ -40,3 +40,23 @@ Process process = Listeners.createNetCatListener( PORT );
 process.destroy();
 ```
 
+## Maven usage
+
+Add following to your pom.xml:
+```xml
+<repositories>
+    <repository>
+        <id>central</id>
+        <name>bintray</name>
+        <url>http://dl.bintray.com/dddpaul/maven</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.dddpaul</groupId>
+        <artifactId>listeners</artifactId>
+        <version>1.0</version>
+    </dependency>
+</dependencies>
+```
