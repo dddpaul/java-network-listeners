@@ -4,14 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.dddpaul</groupId>
-    <artifactId>listeners</artifactId>
+    <artifactId>network-listeners</artifactId>
     <version>1.0</version>
 
     <distributionManagement>
         <repository>
-            <id>bintray-dddpaul-maven-listeners</id>
-            <name>dddpaul-maven-listeners</name>
-            <url>https://api.bintray.com/maven/dddpaul/maven/listeners</url>
+            <id>bintray-dddpaul-maven</id>
+            <url>https://api.bintray.com/maven/dddpaul/maven/network-listeners</url>
         </repository>
     </distributionManagement>
 

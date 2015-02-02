@@ -58,7 +58,7 @@ Add following to your pom.xml:
 <dependencies>
     <dependency>
         <groupId>com.github.dddpaul</groupId>
-        <artifactId>listeners</artifactId>
+        <artifactId>network-listeners</artifactId>
         <version>1.0</version>
     </dependency>
 </dependencies>
