@@ -46,9 +46,12 @@ Add following to your pom.xml:
 ```xml
 <repositories>
     <repository>
-        <id>central</id>
-        <name>bintray</name>
+        <id>dddpaul</id>
         <url>http://dl.bintray.com/dddpaul/maven</url>
+    </repository>
+    <repository>
+        <id>jcenter</id>
+        <url>http://jcenter.bintray.com</url>
     </repository>
 </repositories>
 
