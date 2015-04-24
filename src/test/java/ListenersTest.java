@@ -1,3 +1,4 @@
+import com.github.dddpaul.Listeners;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -34,7 +35,7 @@ public class ListenersTest extends Assert
     @Test
     public void testCancelListener() throws Exception
     {
-        Callable<Socket> listener = Listeners.createListener( PORT );
+        Callable<Socket> listener = Listeners.createListener(PORT);
         Future<Socket> future = executor.submit( listener );
         try {
             future.get( 1, TimeUnit.SECONDS ).close();
