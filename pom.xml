@@ -5,7 +5,7 @@
 
     <groupId>com.github.dddpaul</groupId>
     <artifactId>network-listeners</artifactId>
-    <version>1.01</version>
+    <version>1.02</version>
 
     <distributionManagement>
         <repository>
@@ -34,6 +34,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jool</artifactId>
+            <version>0.9.7</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
